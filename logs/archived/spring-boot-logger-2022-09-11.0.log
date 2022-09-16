@@ -1,0 +1,1179 @@
+2022-09-11 19:49:52,091 INFO org.springframework.boot.StartupInfoLogger [main] Starting SummitBootcampApplication using Java 11.0.16 on lnb028469cps with PID 1379616 (/home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic/target/classes started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:49:52,105 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 19:49:52,111 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:49:54,279 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 19:49:54,400 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2022-09-11 19:49:55,658 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 19:49:55,676 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-11 19:49:55,677 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-11 19:49:55,678 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-09-11 19:49:55,776 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-11 19:49:55,777 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3438 ms
+2022-09-11 19:49:56,831 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 19:49:57,562 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 19:49:57,741 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 19:49:57,852 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 19:49:57,978 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 19:49:58,537 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 19:49:58,728 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 19:50:00,407 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 19:50:00,418 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:50:01,860 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 19:50:02,112 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:50:02,658 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-11 19:50:02,681 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-11 19:50:02,683 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:50:02,719 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:50:02,766 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:50:03,095 INFO org.springframework.boot.StartupInfoLogger [main] Started SummitBootcampApplication in 12.093 seconds (JVM running for 12.777)
+2022-09-11 19:54:33,882 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 19:54:33,883 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-11 19:54:33,888 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2022-09-11 19:54:33,914 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:54:33,915 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the name in the header = Vitor
+2022-09-11 19:54:33,916 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:54:33,939 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Request to the authentication endpoint
+2022-09-11 19:54:34,136 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1, SQLState: null
+2022-09-11 19:54:34,138 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+2022-09-11 19:54:34,144 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8080-exec-1] HHH000327: Error performing load command
+org.hibernate.exception.GenericJDBCException: could not prepare statement
+	at org.hibernate.dialect.SQLiteSQLExceptionConversionDelegate.convert(SQLiteSQLExceptionConversionDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 108 common frames omitted
+2022-09-11 19:54:34,160 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not prepare statement; nested exception is org.hibernate.exception.GenericJDBCException: could not prepare statement] with root cause
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-09-11 19:54:34,183 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:54:34,184 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the name in the header = Vitor
+2022-09-11 19:54:34,186 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:54:34,190 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Request to the authentication endpoint
+2022-09-11 19:57:30,947 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:57:30,948 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the name in the header = Vitor
+2022-09-11 19:57:30,948 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:57:30,954 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Request to the authentication endpoint
+2022-09-11 19:57:30,974 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 1, SQLState: null
+2022-09-11 19:57:30,975 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+2022-09-11 19:57:30,977 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8080-exec-4] HHH000327: Error performing load command
+org.hibernate.exception.GenericJDBCException: could not prepare statement
+	at org.hibernate.dialect.SQLiteSQLExceptionConversionDelegate.convert(SQLiteSQLExceptionConversionDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 108 common frames omitted
+2022-09-11 19:57:30,981 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not prepare statement; nested exception is org.hibernate.exception.GenericJDBCException: could not prepare statement] with root cause
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-09-11 19:57:30,983 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:57:30,985 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the name in the header = Vitor
+2022-09-11 19:57:30,986 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:57:30,993 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Request to the authentication endpoint
+2022-09-11 19:57:45,799 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:08,477 INFO org.springframework.boot.StartupInfoLogger [main] Starting MusicRepositoryTest using Java 11.0.16 on lnb028469cps with PID 1380754 (started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:08,479 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:08,491 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 19:58:09,990 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 19:58:10,078 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2022-09-11 19:58:11,414 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 19:58:11,920 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 19:58:12,036 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 19:58:12,119 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 19:58:12,198 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 19:58:12,411 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 19:58:12,525 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 19:58:13,382 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 19:58:13,394 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:14,365 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 19:58:14,652 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:15,498 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:15,523 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:15,555 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:15,777 INFO org.springframework.boot.StartupInfoLogger [main] Started MusicRepositoryTest in 7.685 seconds (JVM running for 8.889)
+2022-09-11 19:58:16,819 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ciandt.summit.bootcamp2022.services.MusicServiceTest], using SpringBootContextLoader
+2022-09-11 19:58:16,820 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.ciandt.summit.bootcamp2022.services.MusicServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-11 19:58:16,821 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.ciandt.summit.bootcamp2022.services.MusicServiceTest]: MusicServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-11 19:58:16,832 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.ciandt.summit.bootcamp2022.SummitBootcampApplication for test class com.ciandt.summit.bootcamp2022.services.MusicServiceTest
+2022-09-11 19:58:16,835 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-11 19:58:16,836 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ecc4651, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b07a20c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3c18b48e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5503a22, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@59721a17, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fa3c4f7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66e6af49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6263089d, org.springframework.test.context.event.EventPublishingTestExecutionListener@2b080464, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a0de98e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@79c29761, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39f5f24, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@685f5017, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2d5b950b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@404f665e]
+2022-09-11 19:58:16,876 INFO org.springframework.boot.StartupInfoLogger [main] Starting MusicServiceTest using Java 11.0.16 on lnb028469cps with PID 1380754 (started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:16,877 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:17,151 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 19:58:17,165 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2022-09-11 19:58:17,578 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 19:58:17,679 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 19:58:17,708 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 19:58:17,743 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 19:58:17,858 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 19:58:17,859 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:18,219 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 19:58:18,365 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:18,706 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:18,707 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:18,712 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:18,760 INFO org.springframework.boot.StartupInfoLogger [main] Started MusicServiceTest in 1.921 seconds (JVM running for 11.872)
+2022-09-11 19:58:18,814 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 19:58:18,821 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] returns filtered musics list
+2022-09-11 19:58:18,859 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 19:58:18,859 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] name is null or is empty
+2022-09-11 19:58:18,867 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 19:58:18,868 WARN com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] empty music list
+2022-09-11 19:58:18,882 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] searching music by id = 1
+2022-09-11 19:58:18,892 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 19:58:18,893 WARN com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] name less than 2 characters
+2022-09-11 19:58:18,902 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] searching music by id = null
+2022-09-11 19:58:18,902 WARN com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [main] Music of id null, not found!
+2022-09-11 19:58:18,910 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ciandt.summit.bootcamp2022.services.PlayListServiceTest], using SpringBootContextLoader
+2022-09-11 19:58:18,911 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.ciandt.summit.bootcamp2022.services.PlayListServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-11 19:58:18,911 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.ciandt.summit.bootcamp2022.services.PlayListServiceTest]: PlayListServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-11 19:58:18,918 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.ciandt.summit.bootcamp2022.SummitBootcampApplication for test class com.ciandt.summit.bootcamp2022.services.PlayListServiceTest
+2022-09-11 19:58:18,920 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-11 19:58:18,921 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@641b8e0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50cf60d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@332f2b1b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a2181d5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12f22145, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70ac0188, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a119b75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c989acb, org.springframework.test.context.event.EventPublishingTestExecutionListener@1fe37814, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@fd39a21, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@39af729d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@61b9f9a1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@659e0e5a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@768f925a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@34f63d8c]
+2022-09-11 19:58:18,957 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlayListServiceImplTest using Java 11.0.16 on lnb028469cps with PID 1380754 (started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:18,958 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:19,194 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 19:58:19,205 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2022-09-11 19:58:19,434 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 19:58:19,523 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 19:58:19,551 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 19:58:19,582 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 19:58:19,704 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 19:58:19,705 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:20,053 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 19:58:20,271 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:20,841 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:20,843 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:20,852 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:20,915 INFO org.springframework.boot.StartupInfoLogger [main] Started PlayListServiceImplTest in 1.991 seconds (JVM running for 14.027)
+2022-09-11 19:58:20,942 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Starting Starting method of removing music from playlist, class com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl
+2022-09-11 19:58:20,945 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = 1
+2022-09-11 19:58:20,954 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Checking if the song is in the playlist
+2022-09-11 19:58:20,955 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Removing music from playlist
+2022-09-11 19:58:20,956 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Saving playlist
+2022-09-11 19:58:20,974 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Starting method of adding music to playlist, class com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl
+2022-09-11 19:58:20,976 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = 1
+2022-09-11 19:58:20,979 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] checking if the song already exists in the playlist
+2022-09-11 19:58:20,980 WARN com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] The music already exists in the playlist
+2022-09-11 19:58:20,991 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = 1
+2022-09-11 19:58:21,004 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = null
+2022-09-11 19:58:21,005 WARN com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Playlist of id null, not found!
+2022-09-11 19:58:21,018 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Starting method of adding music to playlist, class com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl
+2022-09-11 19:58:21,020 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = 1
+2022-09-11 19:58:21,022 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] checking if the song already exists in the playlist
+2022-09-11 19:58:21,022 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Adding the music in the playlist of id = 1
+2022-09-11 19:58:21,023 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] saving the playlist
+2022-09-11 19:58:21,035 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Starting Starting method of removing music from playlist, class com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl
+2022-09-11 19:58:21,036 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] searching playlist by id = 1
+2022-09-11 19:58:21,037 INFO com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Checking if the song is in the playlist
+2022-09-11 19:58:21,038 WARN com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl [main] Music is not in the playlist
+2022-09-11 19:58:21,054 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ciandt.summit.bootcamp2022.controllers.MusicControllerTest], using SpringBootContextLoader
+2022-09-11 19:58:21,056 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.ciandt.summit.bootcamp2022.controllers.MusicControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-11 19:58:21,056 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.ciandt.summit.bootcamp2022.controllers.MusicControllerTest]: MusicControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-11 19:58:21,083 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.ciandt.summit.bootcamp2022.SummitBootcampApplication for test class com.ciandt.summit.bootcamp2022.controllers.MusicControllerTest
+2022-09-11 19:58:21,084 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-11 19:58:21,085 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9a68aa9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b4db716, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@378c7bc9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c9837e0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@51561b18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2755f323, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73539633, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e59888e, org.springframework.test.context.event.EventPublishingTestExecutionListener@3fb6d686, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37f2f6b8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@58ff0c7b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a70e212, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43fb1f3c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@639c66cd, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@43a02211]
+2022-09-11 19:58:21,132 INFO org.springframework.boot.StartupInfoLogger [main] Starting MusicControllerTest using Java 11.0.16 on lnb028469cps with PID 1380754 (started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:21,132 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:21,802 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:22,083 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2022-09-11 19:58:22,084 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2022-09-11 19:58:22,087 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 3 ms
+2022-09-11 19:58:22,113 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:22,115 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:22,121 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:22,138 INFO org.springframework.boot.StartupInfoLogger [main] Started MusicControllerTest in 1.049 seconds (JVM running for 15.25)
+2022-09-11 19:58:22,201 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,202 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,321 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,324 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [main] Building error object: filter less than 2 characters, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 19:58:22,344 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,345 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,362 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [main] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 19:58:22,379 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ciandt.summit.bootcamp2022.controllers.PlaylistControllerTest], using SpringBootContextLoader
+2022-09-11 19:58:22,380 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.ciandt.summit.bootcamp2022.controllers.PlaylistControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-11 19:58:22,381 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.ciandt.summit.bootcamp2022.controllers.PlaylistControllerTest]: PlaylistControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-11 19:58:22,386 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.ciandt.summit.bootcamp2022.SummitBootcampApplication for test class com.ciandt.summit.bootcamp2022.controllers.PlaylistControllerTest
+2022-09-11 19:58:22,390 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-11 19:58:22,391 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73e97dc4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c0bc123, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@72cbb805, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30c503d9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@87a5f58, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a4a95ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15ee1971, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d2d0bde, org.springframework.test.context.event.EventPublishingTestExecutionListener@57f715bc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@39fe0512, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5cbea6cd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39a8357f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@561d8d03, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f82c447, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@362381b4]
+2022-09-11 19:58:22,464 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlaylistControllerTest using Java 11.0.16 on lnb028469cps with PID 1380754 (started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:22,464 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:22,974 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:23,181 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2022-09-11 19:58:23,182 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2022-09-11 19:58:23,183 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 1 ms
+2022-09-11 19:58:23,204 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:23,205 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:23,211 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:23,243 INFO org.springframework.boot.StartupInfoLogger [main] Started PlaylistControllerTest in 0.84 seconds (JVM running for 16.355)
+2022-09-11 19:58:23,266 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Removing song from playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,270 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [main] Building error object: Music does not exist in the playlist, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 19:58:23,290 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Removing song from playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,290 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Music successfully removed, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,382 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Adding Music to Playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,383 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [main] Building error object: entity not found exception, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 19:58:23,394 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Adding Music to Playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,396 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [main] Building error object: entity not found exception, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 19:58:23,408 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] Adding Music to Playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,409 INFO com.ciandt.summit.bootcamp2022.controllers.PlaylistController [main] the song has been added to the playlist, class com.ciandt.summit.bootcamp2022.controllers.PlaylistController
+2022-09-11 19:58:23,420 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ciandt.summit.bootcamp2022.SummitBootcampApplicationTest], using SpringBootContextLoader
+2022-09-11 19:58:23,421 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.ciandt.summit.bootcamp2022.SummitBootcampApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-11 19:58:23,423 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.ciandt.summit.bootcamp2022.SummitBootcampApplicationTest]: SummitBootcampApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-11 19:58:23,427 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.ciandt.summit.bootcamp2022.SummitBootcampApplication for test class com.ciandt.summit.bootcamp2022.SummitBootcampApplicationTest
+2022-09-11 19:58:23,429 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-11 19:58:23,429 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@118cad8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17ef0c6d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@11bbc6f7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ef3e83e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ae7c0a8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@75043bfd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a47d7d4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b047aba, org.springframework.test.context.event.EventPublishingTestExecutionListener@6f4201f2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b4d0434, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3fb09dfe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5789f118, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@28bb278a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7b04ea0d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4060c7fe]
+2022-09-11 19:58:23,465 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:23,470 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:23,475 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:40,223 INFO org.springframework.boot.StartupInfoLogger [main] Starting SummitBootcampApplication using Java 11.0.16 on lnb028469cps with PID 1380961 (/home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic/target/classes started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 19:58:40,228 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 19:58:40,229 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 19:58:41,719 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 19:58:41,820 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2022-09-11 19:58:42,952 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 19:58:42,971 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-11 19:58:42,972 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-11 19:58:42,972 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-09-11 19:58:43,071 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-11 19:58:43,072 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2743 ms
+2022-09-11 19:58:44,051 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 19:58:44,654 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 19:58:44,773 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 19:58:44,837 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 19:58:44,939 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 19:58:45,192 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 19:58:45,308 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 19:58:46,323 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 19:58:46,330 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 19:58:47,339 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 19:58:47,530 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 19:58:47,968 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-11 19:58:47,986 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-11 19:58:47,987 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 19:58:48,013 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 19:58:48,050 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 19:58:48,260 INFO org.springframework.boot.StartupInfoLogger [main] Started SummitBootcampApplication in 8.821 seconds (JVM running for 9.614)
+2022-09-11 19:59:04,317 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 19:59:04,318 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-11 19:59:04,326 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 8 ms
+2022-09-11 19:59:04,346 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:59:04,346 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the name in the header = Vitor
+2022-09-11 19:59:04,346 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:59:04,371 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Request to the authentication endpoint
+2022-09-11 19:59:04,561 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1, SQLState: null
+2022-09-11 19:59:04,564 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+2022-09-11 19:59:04,572 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8080-exec-1] HHH000327: Error performing load command
+org.hibernate.exception.GenericJDBCException: could not prepare statement
+	at org.hibernate.dialect.SQLiteSQLExceptionConversionDelegate.convert(SQLiteSQLExceptionConversionDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 108 common frames omitted
+2022-09-11 19:59:04,597 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not prepare statement; nested exception is org.hibernate.exception.GenericJDBCException: could not prepare statement] with root cause
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: user0_.PlayslistId)
+	at org.sqlite.core.DB.newSQLException(DB.java:909)
+	at org.sqlite.core.DB.newSQLException(DB.java:921)
+	at org.sqlite.core.DB.throwex(DB.java:886)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:127)
+	at org.sqlite.core.DB.prepare(DB.java:227)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:41)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:19)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:48)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:263)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:235)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2830)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2807)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3395)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy127.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy139.findById(Unknown Source)
+	at com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl.getUserById(UserServiceImpl.java:21)
+	at com.ciandt.summit.bootcamp2022.controllers.UserController.getUserById(UserController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-09-11 19:59:04,621 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 19:59:04,622 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the name in the header = Vitor
+2022-09-11 19:59:04,622 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 19:59:04,627 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Request to the authentication endpoint
+2022-09-11 20:03:41,446 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 20:06:26,719 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 20:06:26,719 INFO org.springframework.boot.StartupInfoLogger [main] Starting SummitBootcampApplication using Java 11.0.16 on lnb028469cps with PID 1381890 (/home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic/target/classes started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 20:06:26,723 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 20:06:27,732 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 20:06:27,795 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2022-09-11 20:06:28,546 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 20:06:28,556 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-11 20:06:28,557 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-11 20:06:28,557 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-09-11 20:06:28,628 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-11 20:06:28,629 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1844 ms
+2022-09-11 20:06:29,197 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 20:06:29,712 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 20:06:29,832 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 20:06:29,888 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 20:06:29,968 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 20:06:30,152 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 20:06:30,240 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 20:06:30,870 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 20:06:30,876 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 20:06:31,636 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 20:06:31,792 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 20:06:32,131 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-11 20:06:32,150 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-11 20:06:32,152 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 20:06:32,175 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 20:06:32,211 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 20:06:32,374 INFO org.springframework.boot.StartupInfoLogger [main] Started SummitBootcampApplication in 6.241 seconds (JVM running for 6.699)
+2022-09-11 20:06:38,232 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 20:06:38,232 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-11 20:06:38,235 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-09-11 20:06:38,256 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:06:38,257 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the name in the header = Vitor
+2022-09-11 20:06:38,257 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:06:38,269 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-1] Request to the authentication endpoint
+2022-09-11 20:14:38,505 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-5] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:14:38,505 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-5] Setting the name in the header = Vitor
+2022-09-11 20:14:38,506 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-5] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:14:38,510 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-5] Request to the authentication endpoint
+2022-09-11 20:14:38,541 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [http-nio-8080-exec-5] Building error object: entity not found exception, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 20:18:10,874 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 20:46:08,830 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 20:46:08,836 INFO org.springframework.boot.StartupInfoLogger [main] Starting SummitBootcampApplication using Java 11.0.16 on lnb028469cps with PID 1386509 (/home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic/target/classes started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 20:46:08,842 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 20:46:10,877 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 20:46:10,972 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2022-09-11 20:46:12,318 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 20:46:12,341 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-11 20:46:12,342 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-11 20:46:12,342 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-09-11 20:46:12,480 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-11 20:46:12,481 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3494 ms
+2022-09-11 20:46:13,474 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 20:46:14,390 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 20:46:14,610 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 20:46:14,763 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 20:46:14,909 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 20:46:15,213 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 20:46:15,342 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 20:46:16,530 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 20:46:16,549 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 20:46:18,060 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 20:46:18,433 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 20:46:19,048 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-11 20:46:19,075 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-11 20:46:19,077 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 20:46:19,115 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 20:46:19,162 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 20:46:19,443 INFO org.springframework.boot.StartupInfoLogger [main] Started SummitBootcampApplication in 11.721 seconds (JVM running for 12.773)
+2022-09-11 20:46:52,600 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 20:46:52,602 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-11 20:46:52,607 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 5 ms
+2022-09-11 20:46:52,646 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:46:52,647 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Setting the name in the header = Naiane
+2022-09-11 20:46:52,648 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Setting the token in the header = 5RzF6L6wnskupxTvla9fCkFV+VBdb+AQnhcI+PY+9TRTwItgvPgsldHOAbiKoAVW
+2022-09-11 20:46:52,682 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Request to the authentication endpoint
+2022-09-11 20:46:52,822 WARN com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Invalid request to authentication endpoint, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:46:52,834 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [http-nio-8080-exec-2] Building error object: Unauthorized exception, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 20:47:13,288 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:47:13,289 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the name in the header = Vitor
+2022-09-11 20:47:13,289 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:47:13,295 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Request to the authentication endpoint
+2022-09-11 20:47:13,360 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:47:13,486 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [http-nio-8080-exec-3] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 20:47:13,489 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [http-nio-8080-exec-3] name is null or is empty
+2022-09-11 20:47:17,661 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:47:45,688 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:47:45,689 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the name in the header = Vitor
+2022-09-11 20:47:45,689 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:47:45,694 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Request to the authentication endpoint
+2022-09-11 20:47:45,726 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-4] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:47:45,730 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-4] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:50:45,159 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:50:45,161 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Setting the name in the header = Vitor
+2022-09-11 20:50:45,163 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:50:45,175 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Request to the authentication endpoint
+2022-09-11 20:50:45,208 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-7] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:50:45,212 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-7] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:58:16,331 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-10] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:58:16,331 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-10] Setting the name in the header = Vitor
+2022-09-11 20:58:16,332 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-10] Setting the token in the header = m1jUdkqcBy5cpvfKbAu+C9qF/mUzpUOVzvyILYjMsvFKrOfcV8tqNbE/AlH3dYvu
+2022-09-11 20:58:16,339 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-10] Request to the authentication endpoint
+2022-09-11 20:58:16,378 WARN com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-10] Invalid request to authentication endpoint, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:58:16,380 WARN com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler [http-nio-8080-exec-10] Building error object: Unauthorized exception, class com.ciandt.summit.bootcamp2022.controllers.exception.ResourceExceptionHandler
+2022-09-11 20:59:48,502 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 20:59:48,504 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the name in the header = Vitor
+2022-09-11 20:59:48,504 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the token in the header = Hgjm3xAI+FNU4zWBds2/p+YWlY+0/FEsiqDa9TmamzA09qEM+IgPZIQKqPfuhFvR
+2022-09-11 20:59:48,507 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Request to the authentication endpoint
+2022-09-11 20:59:48,535 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 20:59:48,537 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:00:54,525 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 21:01:01,869 INFO org.springframework.boot.StartupInfoLogger [main] Starting SummitBootcampApplication using Java 11.0.16 on lnb028469cps with PID 1388738 (/home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic/target/classes started by CIANDT\vbotelho in /home/vbotelho/Documentos/projetosEclipse/Projeto-MyMusic/projetct-myMusic-toTal/MyMusic)
+2022-09-11 21:01:01,871 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-09-11 21:01:01,877 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-09-11 21:01:04,137 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-11 21:01:04,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2022-09-11 21:01:05,756 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 21:01:05,776 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-11 21:01:05,778 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-11 21:01:05,780 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-09-11 21:01:05,946 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-11 21:01:05,947 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3935 ms
+2022-09-11 21:01:07,025 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2022-09-11 21:01:07,920 INFO liquibase.logging.core.JavaLogger [main] Reading from DATABASECHANGELOG
+2022-09-11 21:01:08,103 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2022-09-11 21:01:08,235 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-11 21:01:08,380 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-09-11 21:01:08,814 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-11 21:01:09,004 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2022-09-11 21:01:10,332 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-11 21:01:10,341 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-11 21:01:11,723 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-11 21:01:12,047 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-11 21:01:12,719 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-11 21:01:12,753 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-11 21:01:12,756 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-11 21:01:12,797 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-11 21:01:12,848 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-11 21:01:13,171 INFO org.springframework.boot.StartupInfoLogger [main] Started SummitBootcampApplication in 12.622 seconds (JVM running for 13.507)
+2022-09-11 21:02:16,403 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 21:02:16,405 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-11 21:02:16,410 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 4 ms
+2022-09-11 21:02:16,457 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 21:02:16,458 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Setting the name in the header = Vitor
+2022-09-11 21:02:16,458 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Setting the token in the header = Hgjm3xAI+FNU4zWBds2/p+YWlY+0/FEsiqDa9TmamzA09qEM+IgPZIQKqPfuhFvR
+2022-09-11 21:02:16,506 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-2] Request to the authentication endpoint
+2022-09-11 21:02:16,687 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-2] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:02:16,833 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [http-nio-8080-exec-2] Starting method of searching music by artist or song name, class com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl
+2022-09-11 21:02:16,833 INFO com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl [http-nio-8080-exec-2] name is null or is empty
+2022-09-11 21:02:20,409 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-2] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:02:57,263 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 21:02:57,265 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the name in the header = Vitor
+2022-09-11 21:02:57,266 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Setting the token in the header = Hgjm3xAI+FNU4zWBds2/p+YWlY+0/FEsiqDa9TmamzA09qEM+IgPZIQKqPfuhFvR
+2022-09-11 21:02:57,277 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-3] Request to the authentication endpoint
+2022-09-11 21:02:57,323 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:02:57,327 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-3] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:03:16,258 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 21:03:16,259 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the name in the header = Vitor
+2022-09-11 21:03:16,259 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Setting the token in the header = Hgjm3xAI+FNU4zWBds2/p+YWlY+0/FEsiqDa9TmamzA09qEM+IgPZIQKqPfuhFvR
+2022-09-11 21:03:16,274 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-4] Request to the authentication endpoint
+2022-09-11 21:03:16,304 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-4] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:03:16,306 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-4] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:20:32,661 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] TokenInterceptor - Pre Handle initialized, class com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor
+2022-09-11 21:20:32,664 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Setting the name in the header = Vitor
+2022-09-11 21:20:32,666 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Setting the token in the header = Hgjm3xAI+FNU4zWBds2/p+YWlY+0/FEsiqDa9TmamzA09qEM+IgPZIQKqPfuhFvR
+2022-09-11 21:20:32,672 INFO com.ciandt.summit.bootcamp2022.config.interceptor.TokenInterceptor [http-nio-8080-exec-7] Request to the authentication endpoint
+2022-09-11 21:20:32,697 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-7] Searching musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:20:32,698 INFO com.ciandt.summit.bootcamp2022.controllers.MusicController [http-nio-8080-exec-7] Returning the musics list, class com.ciandt.summit.bootcamp2022.controllers.MusicController
+2022-09-11 21:20:41,436 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'

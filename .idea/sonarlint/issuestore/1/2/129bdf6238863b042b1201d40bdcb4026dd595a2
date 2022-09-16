@@ -1,0 +1,16 @@
+
+t
+java:S1192/"WDefine a constant instead of duplicating this literal "hibernate.hbm2ddl.auto" 3 times.(ûƒ¹’8¸«‘ª­0
+t
+java:S11922"RDefine a constant instead of duplicating this literal "hibernate.dialect" 3 times.(·ÿ©úÿÿÿÿ8¹«‘ª­0
+u
+java:S11925"SDefine a constant instead of duplicating this literal "hibernate.show_sql" 3 times.(öæ“—ùÿÿÿÿ8º«‘ª­0
+Z
+java:S3878'"8Remove this array creation and simply pass the elements.(’Íš‡ıÿÿÿÿ8”¬‘ª­0
+m
+java:S1128
+"KRemove this unused import 'org.springframework.context.annotation.Profile'.(Øİ¥İøÿÿÿÿ8²¬‘ª­0
+o
+java:S1128"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8µ¬‘ª­0
+ƒ
+java:S1128"aRemove this unused import 'org.springframework.data.jpa.repository.config.EnableJpaRepositories'.(²œ˜üÿÿÿÿ8µ¬‘ª­0

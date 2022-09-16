@@ -1,0 +1,1 @@
+2022-09-01 08:33:15,822 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'

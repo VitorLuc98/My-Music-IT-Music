@@ -1,0 +1,235 @@
+Index: src/test/java/com/ciandt/summit/bootcamp2022/services/PlayListServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.ciandt.summit.bootcamp2022.services;\n\nimport com.ciandt.summit.bootcamp2022.dto.ArtistDto;\nimport com.ciandt.summit.bootcamp2022.dto.MusicDto;\nimport com.ciandt.summit.bootcamp2022.dto.PlaylistDto;\nimport com.ciandt.summit.bootcamp2022.model.Artist;\nimport com.ciandt.summit.bootcamp2022.model.Music;\nimport com.ciandt.summit.bootcamp2022.model.Playlist;\nimport com.ciandt.summit.bootcamp2022.repositories.PlaylistRepository;\nimport com.ciandt.summit.bootcamp2022.services.exceptions.MusicExistInPlaylistException;\nimport com.ciandt.summit.bootcamp2022.services.exceptions.MusicNotExistInPlaylistException;\nimport com.ciandt.summit.bootcamp2022.services.exceptions.ResourceNotFoundException;\nimport com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl;\nimport com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.mockito.Mockito;\nimport org.mockito.MockitoAnnotations;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.mock.mockito.MockBean;\n\nimport java.util.List;\nimport java.util.Optional;\n\nimport static org.junit.jupiter.api.Assertions.*;\nimport static org.mockito.ArgumentMatchers.anyString;\nimport static org.mockito.ArgumentMatchers.any;\nimport static org.mockito.Mockito.*;\n\n@SpringBootTest\nclass PlayListServiceTest {\n\n    @Autowired\n    PlayListServiceImpl service;\n\n    @MockBean\n    MusicServiceImpl musicService;\n\n    @MockBean\n    PlaylistRepository repository;\n\n    private PlaylistDto playlistDto;\n    private Playlist emptyPlaylist;\n    private Playlist playlist;\n    private MusicDto musicDto;\n    private Music music;\n    private Optional<Playlist> optionalPlaylist;\n    private Optional<Playlist> emptyOptionalPlaylist;\n\n    @BeforeEach\n    void setUp() {\n        MockitoAnnotations.openMocks(this);\n\n        music = new Music(\"1\",\"Animus\", new Artist(\"2\",\"Monuments\"));\n        musicDto = new MusicDto(\"1\",\"Animus\", new ArtistDto(\"2\",\"Monuments\"));\n        emptyPlaylist = new Playlist(\"1\",List.of());\n        playlist = new Playlist(\"1\",List.of(music));\n        playlistDto = new PlaylistDto(\"1\", List.of(musicDto));\n        optionalPlaylist = Optional.of(playlist);\n        emptyOptionalPlaylist = Optional.of(emptyPlaylist);\n    }\n\n    @Test\n    void getPlaylistByIdShouldReturnResourceNotFoundException() {\n        var exception = assertThrows(\n                ResourceNotFoundException.class, () -> service.getPlaylistById(null),\n                \"Exception not found\");\n\n        assertEquals(\"PlayList Not Found!\",exception.getMessage());\n        assertEquals(ResourceNotFoundException.class,exception.getClass());\n    }\n\n    @Test\n    void getPlaylistByIdShouldReturnPlaylistDto() {\n        when(repository.findById(anyString())).thenReturn(optionalPlaylist);\n\n        var playslistResponse = service.getPlaylistById(\"1\");\n\n        assertNotNull(playslistResponse);\n        assertEquals(PlaylistDto.class,playslistResponse.getClass());\n    }\n\n    @Test\n    void addMusicToPlaylistWhenPlaylistIsEmpty() {\n        when(musicService.getMusicById(anyString())).thenReturn(musicDto);\n        when(repository.findById(anyString())).thenReturn(emptyOptionalPlaylist);\n        when(repository.save(any())).thenReturn(playlist);\n\n        var playlistResponse = service.addMusicToPlaylist(\"1\",musicDto);\n\n        assertNotNull(playlistResponse);\n        assertEquals(\"1\",playlistResponse.getId());\n        assertEquals(playlistDto.getMusics().get(0).getClass(),playlistResponse.getMusics().get(0).getClass());\n        assertEquals(playlistDto.getMusics().size(),playlistResponse.getMusics().size());\n    }\n\n    @Test\n    void addMusicToPlaylistShouldReturnMusicExistInPlaylistException() {\n        when(musicService.getMusicById(anyString())).thenReturn(musicDto);\n        when(repository.findById(anyString())).thenReturn(optionalPlaylist);\n\n        when(repository.save(any())).thenReturn(playlist);\n\n        var exception = assertThrows(\n                MusicExistInPlaylistException.class,() -> service.addMusicToPlaylist(\"1\",musicDto),\n                \"Exception not found\");\n\n        assertEquals(\"Music already exists in the playlist!\",exception.getMessage());\n        assertEquals(MusicExistInPlaylistException.class,exception.getClass());\n    }\n\n    @Test\n    void removeMusicFromPlaylist() {\n        when(musicService.getMusicById(anyString())).thenReturn(musicDto);\n        when(repository.findById(anyString())).thenReturn(optionalPlaylist);\n\n        service.removeMusicFromPlaylist(\"1\",\"1\");\n\n        verify(repository,times(1)).save(Mockito.any(Playlist.class));\n    }\n\n    @Test\n    void removeMusicFromPlaylistShouldReturnMusicNotExistInPlaylistException(){\n        when(musicService.getMusicById(anyString())).thenReturn(musicDto);\n        when(repository.findById(anyString())).thenReturn(emptyOptionalPlaylist);\n\n        var exception = assertThrows(\n                MusicNotExistInPlaylistException.class,() -> service.removeMusicFromPlaylist(\"1\",\"1\"),\n                \"Exception not found\");\n\n        assertEquals(\"Music does not exist in the playlist!\",exception.getMessage());\n        assertEquals(MusicNotExistInPlaylistException.class,exception.getClass());\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/ciandt/summit/bootcamp2022/services/PlayListServiceTest.java b/src/test/java/com/ciandt/summit/bootcamp2022/services/PlayListServiceTest.java
+--- a/src/test/java/com/ciandt/summit/bootcamp2022/services/PlayListServiceTest.java	(revision 2d572393263d7113b973e90a598be03816452402)
++++ b/src/test/java/com/ciandt/summit/bootcamp2022/services/PlayListServiceTest.java	(date 1663185717493)
+@@ -1,17 +1,14 @@
+ package com.ciandt.summit.bootcamp2022.services;
+ 
+-import com.ciandt.summit.bootcamp2022.dto.ArtistDto;
+-import com.ciandt.summit.bootcamp2022.dto.MusicDto;
+-import com.ciandt.summit.bootcamp2022.dto.PlaylistDto;
++import com.ciandt.summit.bootcamp2022.dto.*;
+ import com.ciandt.summit.bootcamp2022.model.Artist;
+ import com.ciandt.summit.bootcamp2022.model.Music;
+ import com.ciandt.summit.bootcamp2022.model.Playlist;
+ import com.ciandt.summit.bootcamp2022.repositories.PlaylistRepository;
+-import com.ciandt.summit.bootcamp2022.services.exceptions.MusicExistInPlaylistException;
+-import com.ciandt.summit.bootcamp2022.services.exceptions.MusicNotExistInPlaylistException;
+-import com.ciandt.summit.bootcamp2022.services.exceptions.ResourceNotFoundException;
++import com.ciandt.summit.bootcamp2022.services.exceptions.*;
+ import com.ciandt.summit.bootcamp2022.services.impl.MusicServiceImpl;
+ import com.ciandt.summit.bootcamp2022.services.impl.PlayListServiceImpl;
++import com.ciandt.summit.bootcamp2022.services.impl.UserServiceImpl;
+ import org.junit.jupiter.api.BeforeEach;
+ import org.junit.jupiter.api.Test;
+ import org.mockito.Mockito;
+@@ -37,13 +34,19 @@
+     @MockBean
+     MusicServiceImpl musicService;
+ 
++    @MockBean
++    UserServiceImpl userService;
++
+     @MockBean
+     PlaylistRepository repository;
+ 
+     private PlaylistDto playlistDto;
++    private PlaylistDto playlistDto2;
++    private Playlist playlist2;
+     private Playlist emptyPlaylist;
+     private Playlist playlist;
+     private MusicDto musicDto;
++    private UserDto userComumDto, userPremiumDto;
+     private Music music;
+     private Optional<Playlist> optionalPlaylist;
+     private Optional<Playlist> emptyOptionalPlaylist;
+@@ -54,9 +57,13 @@
+ 
+         music = new Music("1","Animus", new Artist("2","Monuments"));
+         musicDto = new MusicDto("1","Animus", new ArtistDto("2","Monuments"));
+-        emptyPlaylist = new Playlist("1",List.of());
++        emptyPlaylist = new Playlist("2",List.of());
+         playlist = new Playlist("1",List.of(music));
++        playlist2 = new Playlist("2", List.of(music));
+         playlistDto = new PlaylistDto("1", List.of(musicDto));
++        playlistDto2 = new PlaylistDto("2", List.of(musicDto, musicDto, musicDto, musicDto, musicDto));
++        userComumDto = new UserDto("1", "Emerson", playlistDto2, new UserTypeDto("1", "Comum"));
++        userPremiumDto = new UserDto("2", "Vitor", playlistDto2, new UserTypeDto("2", "Premium"));
+         optionalPlaylist = Optional.of(playlist);
+         emptyOptionalPlaylist = Optional.of(emptyPlaylist);
+     }
+@@ -132,4 +139,64 @@
+         assertEquals("Music does not exist in the playlist!",exception.getMessage());
+         assertEquals(MusicNotExistInPlaylistException.class,exception.getClass());
+     }
+-}
+\ No newline at end of file
++
++    @Test
++    void userAddMusicToPlaylistWhenPlaylistIsEmpty() {
++        when(musicService.getMusicById(anyString())).thenReturn(musicDto);
++        when(userService.findUserById(anyString())).thenReturn(userPremiumDto);
++        when(repository.findById(anyString())).thenReturn(emptyOptionalPlaylist);
++        when(repository.save(any())).thenReturn(playlist2);
++
++        var playlistResponse = service.userAddMusicToPlaylist("2", "2", musicDto);
++
++        assertNotNull(playlistResponse);
++        assertEquals("2",playlistResponse.getId());
++        assertEquals(playlistDto.getMusics().get(0).getClass(),playlistResponse.getMusics().get(0).getClass());
++        assertEquals(playlistDto.getMusics().size(),playlistResponse.getMusics().size());
++    }
++
++    @Test
++    void userAddMusicToPlaylistShouldThrowsPlaylistIsNotTheUser() {
++        when(musicService.getMusicById(anyString())).thenReturn(musicDto);
++        when(userService.findUserById(anyString())).thenReturn(userPremiumDto);
++        when(repository.findById(anyString())).thenReturn(Optional.of(playlist));
++
++        var exception = assertThrows(
++                PlaylistIsNotTheUserException.class,() -> service.userAddMusicToPlaylist("1", "2", musicDto),
++                "Exception not found");
++
++        assertEquals("Playlist does not belong to this user",exception.getMessage());
++        assertEquals(PlaylistIsNotTheUserException.class,exception.getClass());
++    }
++    @Test
++    void userAddMusicToPlaylistShouldThrowsMusicExistInPlaylistException() {
++        when(musicService.getMusicById(anyString())).thenReturn(musicDto);
++        when(userService.findUserById(anyString())).thenReturn(userPremiumDto);
++        when(repository.findById(anyString())).thenReturn(Optional.of(playlist2));
++
++        var exception = assertThrows(
++                MusicExistInPlaylistException.class,() -> service.userAddMusicToPlaylist("2", "2", musicDto),
++                "Exception not found");
++
++        assertEquals("Music already exists in the playlist!",exception.getMessage());
++        assertEquals(MusicExistInPlaylistException.class,exception.getClass());
++    }
++
++    @Test
++    void userAddMusicToPlaylistShouldThrowsMusicLimitAchievedException() {
++        MusicDto newMusicDto = new MusicDto("2", "Regenerate", new ArtistDto("1", "Monuments"));
++
++        when(musicService.getMusicById(anyString())).thenReturn(newMusicDto);
++        when(userService.findUserById(anyString())).thenReturn(userComumDto);
++        when(repository.findById(anyString())).thenReturn(Optional.of(playlist2));
++
++        var exception = assertThrows(
++                MusicLimitAchievedException.class,() -> service.userAddMusicToPlaylist("2", "1", newMusicDto),
++                "Exception not found");
++
++        assertEquals("You have reached the maximum number of songs in your playlist. " +
++                "To add more songs, purchase the premium plan",exception.getMessage());
++        assertEquals(MusicLimitAchievedException.class,exception.getClass());
++    }
++
++}
+Index: src/main/java/com/ciandt/summit/bootcamp2022/services/impl/PlayListServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.ciandt.summit.bootcamp2022.services.impl;\n\nimport com.ciandt.summit.bootcamp2022.dto.MusicDto;\nimport com.ciandt.summit.bootcamp2022.dto.PlaylistDto;\nimport com.ciandt.summit.bootcamp2022.model.Music;\nimport com.ciandt.summit.bootcamp2022.model.Playlist;\nimport com.ciandt.summit.bootcamp2022.model.User;\nimport com.ciandt.summit.bootcamp2022.repositories.PlaylistRepository;\nimport com.ciandt.summit.bootcamp2022.services.MusicService;\nimport com.ciandt.summit.bootcamp2022.services.PlayListService;\nimport com.ciandt.summit.bootcamp2022.services.UserService;\nimport com.ciandt.summit.bootcamp2022.services.exceptions.*;\nimport lombok.RequiredArgsConstructor;\nimport org.modelmapper.ModelMapper;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\n@RequiredArgsConstructor\npublic class PlayListServiceImpl implements PlayListService {\n\n    private final PlaylistRepository playListRepository;\n    private final MusicService musicService;\n\n    private final UserService userService;\n    private final ModelMapper modelMapper;\n    private static final Logger log = LoggerFactory.getLogger(PlayListServiceImpl.class);\n\n    @Override\n    @Transactional(readOnly = true)\n    public PlaylistDto getPlaylistById(String id) {\n        log.info(\"searching playlist by id = {}\", id);\n        var playlistEntity = playListRepository.findById(id);\n        if (playlistEntity.isEmpty()) {\n            log.warn(\"Playlist of id {}, not found!\", id);\n            throw new ResourceNotFoundException(\"PlayList Not Found!\");\n        }\n        return modelMapper.map(playlistEntity, PlaylistDto.class);\n    }\n\n    @Override\n    public PlaylistDto addMusicToPlaylist(String playlistId, MusicDto musicDto) {\n        log.info(\"Starting method of adding music to playlist, {}\", PlayListServiceImpl.class);\n        Music music = modelMapper.map(musicService.getMusicById(musicDto.getId()), Music.class);\n        Playlist playlist = modelMapper.map(getPlaylistById(playlistId), Playlist.class);\n\n        log.info(\"checking if the song already exists in the playlist\");\n        checksMusicExistsInPlaylist(playlist, music);\n\n        log.info(\"Adding the music in the playlist of id = {}\", playlistId);\n        playlist.getMusics().add(music);\n\n        log.info(\"saving the playlist\");\n        playlist = playListRepository.save(playlist);\n\n        return modelMapper.map(playlist, PlaylistDto.class);\n    }\n\n    @Override\n    public void removeMusicFromPlaylist(String playlistId, String musicId) {\n        log.info(\"Starting Starting method of removing music from playlist, {}\", PlayListServiceImpl.class);\n        Music music = modelMapper.map(musicService.getMusicById(musicId), Music.class);\n        Playlist playlist = modelMapper.map(getPlaylistById(playlistId), Playlist.class);\n\n        log.info(\"Checking if the song is in the playlist\");\n        if (playlist.getMusics().stream().noneMatch(m -> m.getId().equals(music.getId()))) {\n            log.warn(\"Music is not in the playlist\");\n            throw new MusicNotExistInPlaylistException(\"Music does not exist in the playlist!\");\n        }\n\n        log.info(\"Removing music from playlist\");\n        playlist.getMusics().removeIf(m -> m.getId().equals(musicId));\n\n        log.info(\"Saving playlist\");\n        playListRepository.save(playlist);\n    }\n\n    @Override\n    public PlaylistDto userAddMusicToPlaylist(String playlistId, String userId, MusicDto musicDto) {\n        User user = modelMapper.map(userService.findUserById(userId), User.class);\n        Music music = modelMapper.map(musicService.getMusicById(musicDto.getId()), Music.class);\n        Playlist playlist = modelMapper.map(getPlaylistById(playlistId), Playlist.class);\n\n        if (!user.getPlaylist().getId().equals(playlist.getId())){\n            throw new PlaylistIsNotTheUser(\"Playlist does not belong to this user\");\n        }\n\n        checksMusicExistsInPlaylist(playlist, music);\n\n        var qtdMusics = user.getPlaylist().getMusics().stream().count();\n        if (user.getUserType().getDescription().equals(\"Comum\") && qtdMusics > 4){\n            throw new MusicLimitAchieved(\"You have reached the maximum number of songs in your playlist. To add more songs, purchase the premium plan\");\n        }\n        playlist.getMusics().add(music);\n        playlist = playListRepository.save(playlist);\n        return modelMapper.map(playlist, PlaylistDto.class);\n    }\n\n    private void checksMusicExistsInPlaylist(Playlist playlist, Music music) {\n        var isMusicExist = playlist.getMusics().stream()\n                .anyMatch(m -> m.getId().equals(music.getId()) &&\n                        m.getArtist().getId().equals(music.getArtist().getId()));\n\n        if (isMusicExist) {\n            log.warn(\"The music already exists in the playlist\");\n            throw new MusicExistInPlaylistException(\"Music already exists in the playlist!\");\n        }\n    }\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/ciandt/summit/bootcamp2022/services/impl/PlayListServiceImpl.java b/src/main/java/com/ciandt/summit/bootcamp2022/services/impl/PlayListServiceImpl.java
+--- a/src/main/java/com/ciandt/summit/bootcamp2022/services/impl/PlayListServiceImpl.java	(revision 2d572393263d7113b973e90a598be03816452402)
++++ b/src/main/java/com/ciandt/summit/bootcamp2022/services/impl/PlayListServiceImpl.java	(date 1663160004422)
+@@ -84,14 +84,14 @@
+         Playlist playlist = modelMapper.map(getPlaylistById(playlistId), Playlist.class);
+ 
+         if (!user.getPlaylist().getId().equals(playlist.getId())){
+-            throw new PlaylistIsNotTheUser("Playlist does not belong to this user");
++            throw new PlaylistIsNotTheUserException("Playlist does not belong to this user");
+         }
+ 
+         checksMusicExistsInPlaylist(playlist, music);
+ 
+         var qtdMusics = user.getPlaylist().getMusics().stream().count();
+         if (user.getUserType().getDescription().equals("Comum") && qtdMusics > 4){
+-            throw new MusicLimitAchieved("You have reached the maximum number of songs in your playlist. To add more songs, purchase the premium plan");
++            throw new MusicLimitAchievedException("You have reached the maximum number of songs in your playlist. To add more songs, purchase the premium plan");
+         }
+         playlist.getMusics().add(music);
+         playlist = playListRepository.save(playlist);
+Index: src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/PlaylistIsNotTheUser.java
+===================================================================
+diff --git a/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/PlaylistIsNotTheUser.java b/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/PlaylistIsNotTheUser.java
+deleted file mode 100644
+--- a/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/PlaylistIsNotTheUser.java	(revision 2d572393263d7113b973e90a598be03816452402)
++++ /dev/null	(revision 2d572393263d7113b973e90a598be03816452402)
+@@ -1,11 +0,0 @@
+-package com.ciandt.summit.bootcamp2022.services.exceptions;
+-
+-public class PlaylistIsNotTheUser extends RuntimeException{
+-
+-    public PlaylistIsNotTheUser() {
+-    }
+-
+-    public PlaylistIsNotTheUser(String message) {
+-        super(message);
+-    }
+-}
+Index: src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/MusicLimitAchieved.java
+===================================================================
+diff --git a/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/MusicLimitAchieved.java b/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/MusicLimitAchieved.java
+deleted file mode 100644
+--- a/src/main/java/com/ciandt/summit/bootcamp2022/services/exceptions/MusicLimitAchieved.java	(revision 2d572393263d7113b973e90a598be03816452402)
++++ /dev/null	(revision 2d572393263d7113b973e90a598be03816452402)
+@@ -1,10 +0,0 @@
+-package com.ciandt.summit.bootcamp2022.services.exceptions;
+-
+-public class MusicLimitAchieved extends RuntimeException{
+-    public MusicLimitAchieved() {
+-    }
+-
+-    public MusicLimitAchieved(String message) {
+-        super(message);
+-    }
+-}
+Index: src/main/java/com/ciandt/summit/bootcamp2022/controllers/exception/ResourceExceptionHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.ciandt.summit.bootcamp2022.controllers.exception;\n\nimport com.ciandt.summit.bootcamp2022.config.interceptor.exceptions.UnauthorizedException;\nimport com.ciandt.summit.bootcamp2022.controllers.PlaylistController;\nimport com.ciandt.summit.bootcamp2022.services.exceptions.*;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.validation.FieldError;\nimport org.springframework.web.bind.MethodArgumentNotValidException;\nimport org.springframework.web.bind.annotation.ControllerAdvice;\nimport org.springframework.web.bind.annotation.ExceptionHandler;\n\nimport javax.servlet.http.HttpServletRequest;\nimport java.time.LocalDateTime;\nimport java.time.format.DateTimeFormatter;\n\n@ControllerAdvice\npublic class ResourceExceptionHandler {\n\n    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern(\"dd/MM/yyyy HH:mm:ss\");\n\n    private static final Logger log = LoggerFactory.getLogger(ResourceExceptionHandler.class);\n\n    @ExceptionHandler(NameLenghtException.class)\n    public ResponseEntity<StandardError> exceptionInvalidName(HttpServletRequest request) {\n        log.warn(\"Building error object: filter less than 2 characters, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(\"The name should have more than 2 characters\");\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(ResourceNotFoundException.class)\n    public ResponseEntity<StandardError> entityNotFound(ResourceNotFoundException e, HttpServletRequest request) {\n        log.warn(\"Building error object: entity not found exception, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(e.getMessage());\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(UnauthorizedException.class)\n    public ResponseEntity<StandardError> unauthorizedException(HttpServletRequest request) {\n        log.warn(\"Building error object: Unauthorized exception, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.UNAUTHORIZED;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(\"Unauthorized! Invalid credentials!\");\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(MusicExistInPlaylistException.class)\n    public ResponseEntity<StandardError> musicExistInPlaylistException(MusicExistInPlaylistException e, HttpServletRequest request) {\n        log.warn(\"Building error object: Music already exists in the playlist, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(e.getMessage());\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(MusicNotExistInPlaylistException.class)\n    public ResponseEntity<StandardError> musicNotExistInPlaylistException(MusicNotExistInPlaylistException e, HttpServletRequest request) {\n        log.warn(\"Building error object: Music does not exist in the playlist, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(e.getMessage());\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(PlaylistIsNotTheUser.class)\n    public ResponseEntity<StandardError> playlistIsNotTheUser(PlaylistIsNotTheUser e, HttpServletRequest request) {\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(e.getMessage());\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(MusicLimitAchieved.class)\n    public ResponseEntity<StandardError> musicLimitAchieved(MusicLimitAchieved e, HttpServletRequest request) {\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        StandardError standardError = new StandardError();\n        standardError.setTimestamp(LocalDateTime.now().format(formatter));\n        standardError.setStatus(status.value());\n        standardError.setError(e.getMessage());\n        standardError.setPath(request.getRequestURI());\n\n        return ResponseEntity.status(status).body(standardError);\n    }\n\n    @ExceptionHandler(MethodArgumentNotValidException.class)\n    public ResponseEntity<ValidationError> validation(MethodArgumentNotValidException e, HttpServletRequest request) {\n        log.warn(\"Building error object: validation errors, {}\", ResourceExceptionHandler.class);\n\n        HttpStatus status = HttpStatus.BAD_REQUEST;\n        ValidationError err = new ValidationError();\n\n        err.setTimestamp(LocalDateTime.now().format(formatter));\n        err.setStatus(status.value());\n        err.setError(\"Validation Error\");\n        err.setPath(request.getRequestURI());\n\n        for(FieldError f : e.getBindingResult().getFieldErrors()) {\n            err.addError(f.getField(), f.getDefaultMessage());\n        }\n\n        return ResponseEntity.status(status).body(err);\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/ciandt/summit/bootcamp2022/controllers/exception/ResourceExceptionHandler.java b/src/main/java/com/ciandt/summit/bootcamp2022/controllers/exception/ResourceExceptionHandler.java
+--- a/src/main/java/com/ciandt/summit/bootcamp2022/controllers/exception/ResourceExceptionHandler.java	(revision 2d572393263d7113b973e90a598be03816452402)
++++ b/src/main/java/com/ciandt/summit/bootcamp2022/controllers/exception/ResourceExceptionHandler.java	(date 1663160004330)
+@@ -1,7 +1,6 @@
+ package com.ciandt.summit.bootcamp2022.controllers.exception;
+ 
+ import com.ciandt.summit.bootcamp2022.config.interceptor.exceptions.UnauthorizedException;
+-import com.ciandt.summit.bootcamp2022.controllers.PlaylistController;
+ import com.ciandt.summit.bootcamp2022.services.exceptions.*;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+@@ -93,8 +92,8 @@
+         return ResponseEntity.status(status).body(standardError);
+     }
+ 
+-    @ExceptionHandler(PlaylistIsNotTheUser.class)
+-    public ResponseEntity<StandardError> playlistIsNotTheUser(PlaylistIsNotTheUser e, HttpServletRequest request) {
++    @ExceptionHandler(PlaylistIsNotTheUserException.class)
++    public ResponseEntity<StandardError> playlistIsNotTheUser(PlaylistIsNotTheUserException e, HttpServletRequest request) {
+ 
+         HttpStatus status = HttpStatus.BAD_REQUEST;
+         StandardError standardError = new StandardError();
+@@ -106,8 +105,8 @@
+         return ResponseEntity.status(status).body(standardError);
+     }
+ 
+-    @ExceptionHandler(MusicLimitAchieved.class)
+-    public ResponseEntity<StandardError> musicLimitAchieved(MusicLimitAchieved e, HttpServletRequest request) {
++    @ExceptionHandler(MusicLimitAchievedException.class)
++    public ResponseEntity<StandardError> musicLimitAchieved(MusicLimitAchievedException e, HttpServletRequest request) {
+ 
+         HttpStatus status = HttpStatus.BAD_REQUEST;
+         StandardError standardError = new StandardError();
